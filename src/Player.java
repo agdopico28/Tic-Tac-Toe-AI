@@ -2,12 +2,13 @@ public class Player {
     private String name;
     private String symbol;
 
-    private static  int numPlayers = 0;
-    public Player(String name){
+    private static int numPlayers = 0;
+
+    public Player(String name) {
         this.name = name;
-        if(numPlayers == 0){
+        if (numPlayers == 0) {
             symbol = "O";
-        }else {
+        } else {
             symbol = "X";
         }
         numPlayers++;
